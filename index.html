@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <h3>Jane Doe</h3>
+      <p>janedoe@email.com | +1 123-456-7890</p>
+    </div>
+    <div class="nav-right">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </div>
+  </nav>
 
+  <!-- About Me -->
+  <section id="about" class="about">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="avatar">
+    <div>
+      <h1>Hi, I'm Jane Doe! 👋</h1>
+      <p>I am a full stack developer with 2 years of experience in both application and presentation layers. I have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><p>HTML<br>2 years experience</p></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript-original.svg"><p>JavaScript<br>1.5 years experience</p></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java-original.svg"><p>Java<br>.5 years experience</p></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react-original.svg"><p>React<br>1 year experience</p></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"><p>Node.js<br>1 year experience</p></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><p>CSS<br>2 years experience</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Chatbot</strong> - Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+      <li><strong>Sentiment Analyzer</strong> - Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+      <li><strong>Fashion Website</strong> - Created a stylish multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+    </ul>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="rec-list" class="rec-grid">
+      <div class="rec-card">Jane is a very quick learner and quickly grasps key concepts of Web development. She got a great attitude & she is an excellent team player. She has a curious mind and asks the right question. She takes initiative within a team and has potential to lead the team.</div>
+      <div class="rec-card">Working with Jane has been an awesome experience. She is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need her expertise I would definitely want to work with her again.</div>
+      <div class="rec-card">I had worked along with Jane during the initial phase of our venture which needed Web development. She is a committed resource who has in depth knowledge about the domain. She will be an asset for any organisation!</div>
+    </div>
+
+    <h3>Leave a Recommendation</h3>
+    <form id="rec-form">
+      <input type="text" id="rec-name" placeholder="Name (Optional)">
+      <textarea id="rec-message" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
